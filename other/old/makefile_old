@@ -1,0 +1,34 @@
+CXX = gcc
+CXXFLAGS = -Wall -g -Wextra -fsanitize=address,undefined
+LDFLAGS = `pkg-config --cflags --libs sdl3`
+
+
+safe : build/main.o build/appstate.o build/coordinates.o build/drawing.o build/game_logic.o build/graphical_logic.o build/input_managing.o 
+	$(CXX) $(CXXFLAGS) -o build/main build/main.o build/appstate.o build/coordinates.o build/drawing.o build/game_logic.o build/graphical_logic.o build/input_managing.o $(LDFLAGS)
+
+run :
+	build/main
+
+clean :
+	rm  build/*
+
+main.o : sources/walls.c
+	$(CXX) $(CXXFLAGS) -c -o build/main.o sources/walls.c 
+
+drawing.o : sources/drawing.c
+	$(CXX) $(CXXFLAGS) -c -o build/drawing.o sources/drawing.c 
+
+game_logic.o : sources/game_logic.c
+	$(CXX) $(CXXFLAGS) -c -o build/game_logic.o sources/game_logic.c 
+
+input_managing.o : sources/input_managing.c
+	$(CXX) $(CXXFLAGS) -c -o build/input_managing.o sources/input_managing.c 
+
+graphical_logic.o : sources/graphical_logic.c
+	$(CXX) $(CXXFLAGS) -c -o build/graphical_logic.o sources/graphical_logic.c 
+
+appstate.o : sources/appstate.c
+	$(CXX) $(CXXFLAGS) -c -o build/appstate.o sources/appstate.c 
+
+coordinates.o : coordinates.c
+	$(CXX) $(CXXFLAGS) -c -o build/coordinates.o sources/coordinates.c 

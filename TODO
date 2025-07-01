@@ -1,0 +1,2 @@
+break is_game_over in 2 functions in game_logic.c
+bug pre place piece cancel move remove the piece
