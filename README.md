@@ -1,4 +1,4 @@
-Adaption du jeu de plateau nommé "Go bloqueur" apparaissant dans la série "à l'épreuve du diable".
+Adaptation du jeu de plateau nommé "Go bloqueur" apparaissant dans la série "à l'épreuve du diable".
 
     Règles :
         De 2 à 4 joueurs.
@@ -28,3 +28,8 @@ Adaption du jeu de plateau nommé "Go bloqueur" apparaissant dans la série "à 
         Fin de partie :
             Lorsque tous les joueurs sont seuls dans leur zone la partie s’arrête.
             On compte l'aire de chaque zone, et détermine le gagnant (et le classement) par ordre décroissant.# Wall-Go
+
+<img src="/images/example1.png">
+<img src="/images/example2.png">
+<img src="/images/example3.png">
+<img src="/images/example4.png">
