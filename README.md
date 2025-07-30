@@ -11,7 +11,7 @@ Adaptation du jeu de plateau nommé "Go bloqueur" apparaissant dans la série "�
                 De même pour les autres joueurs dans l'ordre
                 Ensuite, les joueurs posent leur second pion dans l'ordre inverse
             Pour 2 joueurs :
-                2 pions sont d'ores et déjà placé pour chaque joueurs 
+                2 pions sont d'ores et déjà placés pour chaque joueurs 
                 en B2/F6 et B6/F2
         
         Déroulé d'un tour :
@@ -27,7 +27,7 @@ Adaptation du jeu de plateau nommé "Go bloqueur" apparaissant dans la série "�
 
         Fin de partie :
             Lorsque tous les joueurs sont seuls dans leur zone la partie s’arrête.
-            On compte l'aire de chaque zone, et détermine le gagnant (et le classement) par ordre décroissant.# Wall-Go
+            On compte l'aire de chaque zone, et détermine le gagnant (et le classement) par ordre décroissant.
 
 <img src="/images/example1.png">
 <img src="/images/example2.png">
